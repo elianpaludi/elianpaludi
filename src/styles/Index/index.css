@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+@-webkit-keyframes arriba {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -100vh;
+  }
+}
+
+@keyframes arriba {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -100vh;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.animacion-arriba {
+  -webkit-animation-name: arriba;
+          animation-name: arriba;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Glory', sans-serif;
+}
+
+.container .background {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/pantallabloqueada.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  position: relative;
+}
+
+.container .background .container-block {
+  margin-bottom: 120px;
+  margin-left: 60px;
+}
+
+.container .background .hora {
+  font-size: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .background .dia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.container .background .dia p {
+  padding-right: 10px;
+}
+
+.container .backgroundIngreso {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/pantallados.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+.container .backgroundIngreso .ingreso {
+  width: 400px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.container .backgroundIngreso .ingreso .imagenDeUsuario {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-image: url("../../images/usuario.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .backgroundIngreso .ingreso h2 {
+  color: white;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.container .backgroundIngreso .ingreso .contenedorDeIngreso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .backgroundIngreso .ingreso .contenedorDeIngreso input {
+  height: 25px;
+  padding: 2px;
+}
+
+.container .backgroundIngreso .ingreso .contenedorDeIngreso .pregunta {
+  width: 25px;
+  height: 25px;
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.container .backgroundIngreso .ingreso .contenedorDeIngreso .helper {
+  color: white;
+  font-weight: 600;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,102 @@
+.container-windows{
+    width: 100%;
+    height: 100vh;
+
+    .windows{
+        background-image: url('../../images//Windows/fondo.jpg');
+        width:100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        user-select:none;
+        .carpeta{
+            background-image: url('../../images/carpeta.png');
+            width:70px;
+            height: 70px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+            left: 15px;
+            margin-bottom: 20px;
+            display:flex;
+            justify-content: center;
+
+            &:hover{
+                background-color: rgba(0, 140, 255, 0.479);
+                outline:1px solid rgba(0, 98, 255, 0.548);;
+            }
+
+        }
+        .texto-carpeta{
+            position: relative;
+            top: -20px;
+            left: 15px;
+            pointer-events: none;
+            color: white;
+            width: 70px;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            backdrop-filter: blur(10px);
+            background: rgba(18, 10, 29, 0.548);
+            display: flex;
+
+            .iconowindows{
+                width: 60px;
+                height: 40px;
+                background-image: url('../../images/Windows/icono.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40%;
+                
+                
+                &:hover{
+                    background-color: rgba(0, 195, 255, 0.308);
+                }
+                }
+            }
+
+            input{
+                width: 340px;
+                padding: 15px;
+                font-size: 14px;
+                cursor:text;
+                color:white;
+                background-color:rgba(78, 78, 78, 0.739);
+                outline: rgb(149, 149, 149) 1px solid;
+                &:hover{
+                    background-color:rgba(90, 90, 90, 0.739);
+                    outline: rgb(177, 177, 177) 1px solid;
+                }
+
+                &::placeholder{
+                    color: white;
+                }
+                
+                &:focus{
+                    background-color:rgb(255, 255, 255);
+                    outline: rgb(177, 177, 177) 1px solid;
+                    color:black;
+
+                    &::placeholder{
+                        color:black;
+                    }
+                }
+            }
+
+            }
+            .carpeta_expanded-proyectos{
+                position: absolute;
+                width: 800px;
+                height: 500px;
+                background-color: white;
+                top: 10vh;
+                left: 25vw;
+            }
+        }

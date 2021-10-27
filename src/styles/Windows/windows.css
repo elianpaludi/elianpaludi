@@ -1,0 +1,138 @@
+.container-windows {
+  width: 100%;
+  height: 100vh;
+}
+
+.container-windows .windows {
+  background-image: url("../../images//Windows/fondo.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container-windows .windows .carpeta {
+  background-image: url("../../images/carpeta.png");
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 15px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-windows .windows .carpeta:hover {
+  background-color: rgba(0, 140, 255, 0.479);
+  outline: 1px solid rgba(0, 98, 255, 0.548);
+}
+
+.container-windows .windows .texto-carpeta {
+  position: relative;
+  top: -20px;
+  left: 15px;
+  pointer-events: none;
+  color: white;
+  width: 70px;
+}
+
+.container-windows .windows footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(18, 10, 29, 0.548);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-windows .windows footer .iconowindows {
+  width: 60px;
+  height: 40px;
+  background-image: url("../../images/Windows/icono.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.container-windows .windows footer .iconowindows:hover {
+  background-color: rgba(0, 195, 255, 0.308);
+}
+
+.container-windows .windows input {
+  width: 340px;
+  padding: 15px;
+  font-size: 14px;
+  cursor: text;
+  color: white;
+  background-color: rgba(78, 78, 78, 0.739);
+  outline: #959595 1px solid;
+}
+
+.container-windows .windows input:hover {
+  background-color: rgba(90, 90, 90, 0.739);
+  outline: #b1b1b1 1px solid;
+}
+
+.container-windows .windows input::-webkit-input-placeholder {
+  color: white;
+}
+
+.container-windows .windows input:-ms-input-placeholder {
+  color: white;
+}
+
+.container-windows .windows input::-ms-input-placeholder {
+  color: white;
+}
+
+.container-windows .windows input::placeholder {
+  color: white;
+}
+
+.container-windows .windows input:focus {
+  background-color: white;
+  outline: #b1b1b1 1px solid;
+  color: black;
+}
+
+.container-windows .windows input:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+.container-windows .windows input:focus:-ms-input-placeholder {
+  color: black;
+}
+
+.container-windows .windows input:focus::-ms-input-placeholder {
+  color: black;
+}
+
+.container-windows .windows input:focus::placeholder {
+  color: black;
+}
+
+.container-windows .carpeta_expanded-proyectos {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  top: 10vh;
+  left: 25vw;
+}
+/*# sourceMappingURL=windows.css.map */
